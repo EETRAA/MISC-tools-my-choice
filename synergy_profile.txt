@@ -1,0 +1,5 @@
+#[Seat:*]
+#autologin-user=hades
+[SeatDefaults]
+#display-setup-script=/usr/bin/synergyc --name hades-OptiPlex-3046 192.168.1.145
+greeter-setup-script=/usr/bin/synergyc --name hades-OptiPlex-3046 192.168.1.145
