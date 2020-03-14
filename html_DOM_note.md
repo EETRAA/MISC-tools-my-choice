@@ -47,6 +47,8 @@ consol.info(ip[i].title)
 
 
 ```
+ip = document.getElementsByTagName("acronym")
+
 for(var i = 0; i < ip.length; i++){
 	if(ip[i].title.toString().match(/End/)){
 		console.log(ip[i].title.toString().match(/End/).input)
@@ -62,4 +64,15 @@ for(var i = 0,index = 1; i < ip.length; i++){
 		index++;
     }	
 }
+```
+
+```
+ip = document.getElementsByClassName("c-input c-input-large op-ip-input")
+
+click = document.getElementsByClassName("c-btn c-btn-primary op-ip-do-submit OP_LOG_BTN")
+
+ip[0].value = "120.236.251.50";
+
+click[0].click()
+
 ```
