@@ -82,3 +82,13 @@ ip[0].value = "120.236.251.50";
 click[0].click()
 
 ```
+
+```
+ip = document.getElementsByTagName("acronym")
+
+parser = ip[5].parentElement.parentElement.parentElement.innerText.split(":",2)
+
+parser[0]
+
+parser[1].slice(0,parser[1].indexOf("SOCKS",0)).trim()
+```
