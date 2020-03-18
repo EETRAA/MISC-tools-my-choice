@@ -81,7 +81,7 @@ function IP_parser() {
 
 ### 输出跳板的ip
 
-```
+```javascript
 ip = document.getElementsByTagName("acronym")
 
 parser = ip[5].parentElement.parentElement.parentElement.innerText.split(":",2)
