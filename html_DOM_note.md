@@ -23,6 +23,14 @@
 3. DOM对象
 4. html对象
 
+## js笔记
+
+- `rototype` 属性使您有能力向对象添加属性和方法。
+
+- 当构建一个属性，所有的数组将被设置属性，它是默认值。
+
+- 在构建一个方法时，所有的数组都可以使用该方法。
+
 ## 正式代码
 
 ### 修改页面显示的类型和每页显示数量
@@ -94,13 +102,35 @@ parser[1].slice(0,parser[1].indexOf("SOCKS",0)).trim()
 ### 百度ip查询页面输入并查询代码
 
 ```javascript
-ip = document.getElementsByClassName("c-input c-input-large op-ip-input")
+ip = document.getElementsByClassName("c-input c-input-large op-ip-input");
 
-click = document.getElementsByClassName("c-btn c-btn-primary op-ip-do-submit OP_LOG_BTN")
+click = document.getElementsByClassName("c-btn c-btn-primary op-ip-do-submit OP_LOG_BTN");
 
 ip[0].value = "120.236.251.50";
 
-click[0].click()
+click[0].click();
 
 ```
 
+### 嵌入新的网页
+
+```javascript
+baidu = document.createElement("iframe");
+
+baidu.setAttribute("src","https://www.baidu.com");
+
+document.body.append(baidu);
+
+baidu.height = 800;
+baidu.width = 600;
+```
+
+1. 父级页面获取iframe页面中的元素对象（关键contentWindow）：
+
+	`document.getElementById(iframe的id).contentWindow.document.getElementById(iframe页面元素id)`
+
+2. iframe页面获取父级页面的元素对象（关键window.parent）：
+
+	`window.parent.document.getElementById(父级页面的元素id)`
+	
+3. 需要使用 `window.onload` 来确保加载完毕
