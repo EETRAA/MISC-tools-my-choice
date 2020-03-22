@@ -10,11 +10,11 @@
 <p>Hello world!</p>
 ```
 
-节点`<p>`中`Hello world`是其子节点，称为文本节点使用`innerHTML`属性来访问文本节点的值。
+节点 `<p>` 中 `Hello world` 是其子节点，称为文本节点使用 `innerHTML` 属性来访问文本节点的值。
 
 ## 结构：
 
-`对象`及其`方法`，`属性`，`事件`
+`对象` 及其 `方法`，`属性`，`事件`
 
 ## 对象
 
@@ -134,3 +134,33 @@ baidu.width = 600;
 	`window.parent.document.getElementById(父级页面的元素id)`
 	
 3. 需要使用 `window.onload` 来确保加载完毕
+
+### switchyomega界面
+
+```javascript
+loca = document.getElementsByClassName("ng-binding ng-isolate-scope");
+
+loca[0].innerText;
+
+loca[0].click();
+
+temp = document.querySelectorAll("input[placeholder]");//选择返回为一个列表，选择方式为CSS选择器
+
+temp.placeholder;//输出为其内置属性
+```
+
+document.getElementById
+
+document.getElementsByName
+
+document.getElementsByTagName
+
+document.getElementsByClassName
+
+都是实时的，文档有更新会自动更新。
+
+document.querySelector(css选择器)
+
+dcument.querySelectorAll(css选择器)
+
+非实时
