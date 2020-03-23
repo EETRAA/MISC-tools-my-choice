@@ -167,7 +167,7 @@ dcument.querySelectorAll(css选择器)
 
 ### 数组的方法
 
-```
+```javascript
 //回调函数应当返回值
 list.forEach(callbackfunc(item,index,arr),thisValue);
 //此方法将轮询一次当前数组元素，将数组的当前轮询选中元素，当前轮询选中元素的索引号，当前数组对象本身按顺序传给回调函数。原数组不受影响。
