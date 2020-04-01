@@ -105,6 +105,61 @@ for (let i of iterable) {
   console.log(i); // logs 3, 5, 7
 }
 ```
+### JSON数据格式解析
+
+json中，始终将 `{}` 里的东西当做对象，**始终遵循上一级为对象，下一级为属性的原则**来构建json数据
+
+json不能注释
+
+- 如 `object = {}` 则 `{}` 中为 `object` 的属性
+- 如 `{"obejct":{}}` 则 `object` 为上一级的属性，对于下一级来说为下一级的对象
+
+1. json对象数组
+
+```json
+{
+"sites": [										//当sites为对象时，{"sites":[{},{},{}]}
+{ "name":"google1" , "url":"www.google.com" }, 	//这是第一个对象，sites[0]，大括号内含有属性，访问方式sites[0].name/url
+{ "name":"google2" , "url":"www.google.com" }, 	//这是第二个对象，sites[1]……
+{ "name":"google3" , "url":"www.google.com" }	//这是第三个对象，sites[2]……
+]
+}
+```
+
+2. json嵌套
+
+```json
+{
+	"Object":{
+		"name":"google",
+		"alexa":"1",
+		"sites":{						//单对象嵌套，访问方式Object.sites.site1/2/3
+			"site1":"www.google.com",
+			"site2":"www.google.com",
+			"site3":"www.google.com"
+		},
+		"sites_duplicate":[				//多对象嵌套，访问方式Object.sites[0].site1
+		{"site1":"www.google.com"},
+		{"site2":"www.google.com"},
+		{"site3":"www.google.com"}
+		]
+	}
+}
+```
+
+3. json使用js语法
+
+```javascript
+	Object = {
+		"name":"google",
+		"alexa":"1",
+		"sites":{
+			"site1":"www.google.com",
+			"site2":"www.google.com",
+			"site3":"www.google.com"
+		}
+	}
+```
 
 ## 正式代码
 
