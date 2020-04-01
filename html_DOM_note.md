@@ -161,6 +161,24 @@ json不能注释
 	}
 ```
 
+### js定时器
+
+```javascript
+
+function console_log(content){
+	console.log(content);
+}
+
+TimerA = setInterval("console_log('hi, there!')",1000);	//字符串有参传入函数
+
+TimerA = setInterval("console_log()",1000);				//字符串无参传入函数
+
+TimerA = setInterval(console_log,1000);					//handler方式传入函数
+
+clearInterval(TimerA)
+
+```
+
 ## 正式代码
 
 ### 修改页面显示的类型和每页显示数量
