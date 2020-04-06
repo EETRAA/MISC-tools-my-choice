@@ -1,5 +1,4 @@
-- [x] 一会儿加注释
-- [x] 用导航来完成更多信息的输出，~~可以考虑使用图表~~
+- [x] 代码迁移到python
 
 
 # DOM(Document Object Model)
