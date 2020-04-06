@@ -1,3 +1,7 @@
+- [x] 一会儿加注释
+- [x] 用导航来完成更多信息的输出，~~可以考虑使用图表~~
+
+
 # DOM(Document Object Model)
 
 ## 节点以及导航
@@ -321,7 +325,7 @@ dcument.querySelectorAll(css选择器)
 
 非实时
 
-### 待更新代码
+## 待更新代码
 
 ```javascript
 loca = document.getElementsByClassName("ng-binding ng-isolate-scope");//获取左边代理栏元素
@@ -349,3 +353,40 @@ for(i=0;i<(loca.length-2);i++){
 }
 
 ```
+
+```python
+from selenium import webdriver
+
+socks5 = webdriver.ChromeOptions()
+
+socks5.add_argument('-proxy-server=socks5://180.107.14.16:1081')
+
+chrome = webdriver.Chrome(chrome_options=socks5)
+
+chrome.set_page_load_timeout(5)	//set selenium global tiemout 
+
+chrome.get('http://spys.one/free-proxy-list/CN/')
+
+js = '''
+//javascript code here
+'''
+
+chrome.execute_script(js)//selenium runs js code
+
+chrome.refresh()//selenium refresh page 
+```
+selenium 延迟
+
+WebDriverWait：等待指定元素加载完毕后，再继续执行后续代码。
+
+implicitly_wait：针对页面，对所有元素设置超时时长。
+
+time.sleep(1)：强制等待，不管画面加载是否完成，都会休眠固定时长。
+
+```python
+import subprocess
+
+subprocess.run(['ping','127.0.0.1'])
+```
+
+above code snippet is python ping.
