@@ -1,6 +1,3 @@
-- [x] 代码迁移到python
-
-
 # DOM(Document Object Model)
 
 ## 节点以及导航
@@ -22,7 +19,7 @@
 3. DOM对象
 4. html对象
 
-## js笔记
+## js/python笔记
 
 - `rototype` 属性使您有能力向对象添加属性和方法。
 
@@ -177,6 +174,16 @@ TimerA = setInterval(console_log,1000);					//handler方式传入函数
 clearInterval(TimerA)
 
 ```
+
+### python selenium
+
+1. conda install selenium
+
+2. 下载chromedriver.exe（到selenium.dev上去寻找对应的驱动，chrome驱动的版本和浏览器要对应，网址：http://npm.taobao.org/mirrors/chromedriver/）
+
+3. 将驱动chromedriver.exe放到chrome.exe目录下
+
+4. 将当前的chrome.exe和chromedriver.exe的路径加入到系统变量path中
 
 ## 正式代码
 
