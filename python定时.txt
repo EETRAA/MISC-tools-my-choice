@@ -1,0 +1,25 @@
+# 测试定时问题
+
+import time,os,sched
+
+def task_refresh_page(cmd,inc):
+  schedule.enter(inc, 0, task_refresh_page, (cmd, inc))#将当前任务再次加入队列，实现循环实行任务
+  '''
+  下面加入具体要运行的函数
+  '''
+  os.system(cmd)
+
+def scheduler_run(cmd,inc):
+  schedule.enter(inc,0,task_refresh_page,(cmd,inc))#将任务加入队列
+  schedule.run()#干活咯~~~~~
+
+schedule = sched.scheduler(time.time,time.sleep)
+
+scheduler_run('echo %time%',2)
+
+# selenium代理功能动态修改问题
+
+https://www.cnblogs.com/nail/p/6616417.html
+https://www.zhihu.com/question/29207713
+
+selenium.webdriver.Chrome()#接受desired_capabilities 可以一试
