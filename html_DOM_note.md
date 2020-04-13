@@ -359,7 +359,7 @@ socks5.add_argument('-proxy-server=socks5://180.107.14.16:1081')
 
 chrome = webdriver.Chrome(chrome_options=socks5)
 
-chrome.set_page_load_timeout(5)	//set selenium global tiemout 
+chrome.set_page_load_timeout(5)	#set selenium global tiemout 
 
 chrome.get('http://spys.one/free-proxy-list/CN/')
 
@@ -367,9 +367,9 @@ js = '''
 //javascript code here
 '''
 
-chrome.execute_script(js)//selenium runs js code
+chrome.execute_script(js)#selenium runs js code
 
-chrome.refresh()//selenium refresh page 
+chrome.refresh()#selenium refresh page 
 ```
 selenium 延迟
 
