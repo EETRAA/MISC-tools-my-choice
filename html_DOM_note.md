@@ -179,7 +179,7 @@ clearInterval(TimerA)
 
 1. conda install selenium
 
-2. 下载chromedriver.exe（到selenium.dev上去寻找对应的驱动，chrome驱动的版本和浏览器要对应，网址：http://npm.taobao.org/mirrors/chromedriver/）
+2. 下载chromedriver.exe ( 到selenium.dev上去寻找对应的驱动，chrome驱动的版本和浏览器要对应，网址：http://npm.taobao.org/mirrors/chromedriver/ ) 
 
 3. 将驱动chromedriver.exe放到chrome.exe目录下
 
@@ -355,8 +355,8 @@ from selenium import webdriver
 
 socks5 = webdriver.ChromeOptions()
 
-socks5.add_argument('-proxy-server=socks5://180.107.14.16:1081')
-
+socks5.add_argument('-proxy-server=socks5://50.62.31.62:15687')
+#sock5.arguments.pop()/.reverse()
 chrome = webdriver.Chrome(chrome_options=socks5)
 
 chrome.set_page_load_timeout(5)	#set selenium global tiemout 
