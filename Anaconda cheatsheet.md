@@ -71,4 +71,4 @@ pandoc file.xx(support drag-and-drop) -o C:\Users\Administrator\Desktop\file.doc
 
 ### Recover all channels to defaults:
 
-- delete the file `.condarc`
+   - delete the file `.condarc`
