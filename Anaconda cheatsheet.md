@@ -47,7 +47,7 @@ pandoc file.xx(support drag-and-drop) -o C:\Users\Administrator\Desktop\file.doc
 
     `> conda config --set show_channel_urls yes`
 
-3. rewrite the file `.condarc` with this:
+2. rewrite the file `.condarc` with this:
 
     ```
     channels:
@@ -68,6 +68,13 @@ pandoc file.xx(support drag-and-drop) -o C:\Users\Administrator\Desktop\file.doc
     pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
     simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
     ```
+3. Run the following cmd to clean cahce.
+
+    `> conda clean -i`
+
+4. Welcome to the 1000hp club！
+    
+    `> conda install selenium`
 
 ### Recover all channels to defaults:
 
