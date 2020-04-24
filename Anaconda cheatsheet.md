@@ -1,3 +1,8 @@
+# Get help
+
+`> conda config -h`
+`> conda -h`
+
 # Pandoc intergraded
 
 run this in Anaconda Powershell Prompt
@@ -40,6 +45,8 @@ pandoc file.xx(support drag-and-drop) -o C:\Users\Administrator\Desktop\file.doc
 ### Check channels.
 
 `> conda info`
+`> conda config --show-sources`
+`> conda config --show`
 
 ### Change all channels to CN's channels.
 
