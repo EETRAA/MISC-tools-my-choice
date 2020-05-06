@@ -1,3 +1,9 @@
+# Windows下单个解决方案
+
 C:\Users\Administrator>soffice --headless --convert-to pdf C:\Users\Administrato
 r\Downloads\韩语词汇：TOPIK初级韩语单词系列.doc --outdir C:\Users\Administrator\
 Desktop
+
+# Windows下批量解决方案
+
+for /r 待转换文件的路径 %i in (*.ppt) do soffice --headless --convert-to pdf %i --outdir 路径
