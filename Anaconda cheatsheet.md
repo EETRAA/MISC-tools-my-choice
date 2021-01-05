@@ -87,3 +87,9 @@ pandoc file.xx(support drag-and-drop) -o C:\Users\Administrator\Desktop\file.doc
 ### Recover all channels to defaults:
 
    - delete the file `.condarc`
+
+# Update packages
+
+    `> conda update conda
+    `> conda update anaconda
+    `> conda update --all
