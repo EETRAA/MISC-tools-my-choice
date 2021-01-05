@@ -89,7 +89,6 @@ pandoc file.xx(support drag-and-drop) -o C:\Users\Administrator\Desktop\file.doc
    - delete the file `.condarc`
 
 # Update packages
-
-    `> conda update conda
-    `> conda update anaconda
-    `> conda update --all
+	> conda update conda
+	> conda update anaconda
+	> conda update --all
